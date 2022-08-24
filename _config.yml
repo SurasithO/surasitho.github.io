@@ -48,7 +48,7 @@ social:
     - https://github.com/SurasithO       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/ohm46817/
 
 google_site_verification:               # fill in to your verification string
 
@@ -110,7 +110,7 @@ comments:
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
-    enabled: true     # boolean, keep empty means false
+    enabled: true    # boolean, keep empty means false
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
     env:          # [development|production]
