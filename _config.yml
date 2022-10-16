@@ -23,10 +23,10 @@ timezone: Asia/Bangkok
 
 title: Surasith Boonaneksap                          # the main title
 
-tagline: My Personal Page   # it will display as the sub-title
+tagline: My Personal Blog   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  My personal blog for posting articles related to data science in Thai and English
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://surasitho.github.io'
@@ -56,7 +56,7 @@ google_site_verification:               # fill in to your verification string
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id:                 # fill in your Google Analytics ID
+  id: 'G-11MW5JLE5Y'                # fill in your Google Analytics ID
   # Google Analytics pageviews report settings
   pv:
     proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine

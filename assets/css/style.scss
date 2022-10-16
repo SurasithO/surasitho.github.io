@@ -14,11 +14,16 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 /* Customized by Surasith Boonaneksap */
 #sidebar .site-title a {
   font-weight: 550;
+  // letter-spacing: 0.01px;
 }
 
 #sidebar .nav-link {
   letter-spacing: 0.7px;
 }
+
+// body {
+//   font-family: 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+// }
 
 // #sidebar #avatar>a {
 //   width: 5.5rem;
