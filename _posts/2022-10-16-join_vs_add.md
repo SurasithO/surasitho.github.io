@@ -80,7 +80,6 @@ Now, it's not quite simple to say that `join()` is $x$ times faster than `+`. Th
 ```
 
 what Python does is two separate concatenations from left to right. First is `"I" + " love"`. The second is `"I love" + " Python."`. This impacts the performance for two reasons.
-<!-- The problem with this is that Python's string is immutable. This means that the value of a string cannot be changed. A concatenation between two strings will force Python to create a new string (or it could use an existing string if it has the same value as the resulting string). This impacts the performance for two reasons. -->
 
 First, Python has to create two new strings; `"I love"` and `"I love Python."`. More generally, Python has to create $n - 1$ strings where $n$ is the number of strings you want to concatenate. Python's string is immutable, so the value of a string cannot be changed. A concatenation between two strings will force Python to create a new one (or it could use an existing string if it has the same value as the resulting string).
 
@@ -96,7 +95,6 @@ The way `+` works can be roughly summarized as follow:
 This is just for one `+` operation. So, in the diagram above, aside from creating a new string object, Python has to copy 6 characters in total to get the first concatenated string. Nothing's wrong here. Next, we do another concatenation with the third string, copying a total of 14 characters.
 
 You may have noticed that, for the second concatenation, we have to copy the string resulting from the first concatenation as well even though we have already done that the first time. Here, `"I love"` is copied twice. It may not look like much, but this redundancy compound the more strings you concatenate. This is the second and the primary reason why this method is so slow. To drive the point home, let's take a look at a simplified version of this example.
-<!-- If we were to add another string for concatenation, you will need to copy `"I love"` again, as well as `" Python."`. This creates redundancy. Let's simplify our example a little to see exactly just how much work needs to be repeated.-->
 
 ![join_vs_add_2](/assets/img/posts/join_vs_add/join_vs_add_2.svg)
 
